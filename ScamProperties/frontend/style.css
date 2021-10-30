@@ -1,0 +1,108 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS GRID */
+.container-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.tile {
+  background: #353535;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 200px;
+  width: 100%;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+
+.tile:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* CSS SIDEBAR */
+
+body {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  margin-right: 10px;
+  background-color: rgb(22, 22, 27);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.abt {
+  color: white;
+  background-color: rgb(22, 22, 27);
+  border: none;
+  width: 100%;
+}
+
+.history {
+  color: white;
+  background-color: rgb(22, 22, 27);
+  border: none;
+  width: 100%;
+}
+
+.shopping {
+  color: white;
+  background-color: rgb(22, 22, 27);
+  border: none;
+  width: 100%;
+}
+
+.abt:hover {
+  background-color: rgb(51, 66, 79);
+  width: 100%;
+}
+
+.abt:active {
+  background-color: rgba(51, 66, 79, 0.589);
+}
+
+.history:hover {
+  background-color: rgb(51, 66, 79);
+  width: 100%;
+}
+
+.history:active {
+  background-color: rgba(51, 66, 79, 0.589);
+}
+
+.shopping:hover {
+  background-color: rgb(51, 66, 79);
+  width: 100%;
+}
+
+.shopping:active {
+  background-color: rgba(51, 66, 79, 0.589);
+}
+
+.logo {
+  justify-self: start;
+}
+/*CSS TOPBAR*/
